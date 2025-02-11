@@ -1,0 +1,41 @@
+{
+  "name": "seaber2",
+  "version": "1.0.0",
+  "description": "Seaber rest api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch --env-file=.env -r ts-node/register ./src/index.ts",
+    "build": "rimraf ./build && tsc",
+    "migrate": "drizzle-kit push",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpachbiu88/seaber2.git"
+  },
+  "author": "Konstantin Nikolaev <twozebras.nikolaev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpachbiu88/seaber2/issues"
+  },
+  "homepage": "https://github.com/kpachbiu88/seaber2#readme",
+  "dependencies": {
+    "drizzle-orm": "^0.39.3",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.1",
+    "@types/pg": "^8.11.11",
+    "@types/supertest": "^6.0.2",
+    "drizzle-kit": "^0.30.4",
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
